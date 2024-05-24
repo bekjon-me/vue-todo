@@ -1,7 +1,7 @@
 <script setup lang="ts">
   import { onMounted } from 'vue'
 
-  const tele = window.Telegram.WebApp
+  const tele = (window as any).Telegram.WebApp
 
   onMounted(() => {
     tele.ready()
